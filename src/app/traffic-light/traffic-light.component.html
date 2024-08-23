@@ -1,0 +1,9 @@
+<p>flag</p>
+
+<div class="traffic-light">
+    <div class="light" [ngClass]="{ active: lightState === 'red' }"></div>
+    <div class="light" [ngClass]="{ active: lightState === 'yellow' }"></div>
+    <div class="light" [ngClass]="{ active: lightState === 'green' }"></div>
+</div>
+
+<button (click)="changeLightState()">Change Light</button>
